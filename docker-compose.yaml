@@ -1,0 +1,11 @@
+version: '3'
+services:
+ allure:
+   build:
+    context: ./all
+   ports:
+     - 8080:8080
+   volumes:
+     - /home/ec2-user:/root
+   command: ./allure serve /root --port 8080       
+             
